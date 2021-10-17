@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs/RunData/v16
+/packages/Newtonsoft.Json.13.0.1
+/RunData/obj
+/RunDataLibrary/bin/Debug
+/RunDataLibrary/obj
+/RunData/bin/Debug

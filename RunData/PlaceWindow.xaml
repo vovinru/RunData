@@ -1,0 +1,28 @@
+﻿<Window x:Class="RunData.PlaceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RunData"
+        mc:Ignorable="d"
+        Title="Место" Height="130" Width="500">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Название" VerticalAlignment="Center"></Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Name}"></TextBox>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Город" VerticalAlignment="Center"></Label>
+        <ComboBox Grid.Row="1" Grid.Column="1" ItemsSource="{Binding Cities}" SelectedItem="{Binding City}"></ComboBox>
+
+    </Grid>
+</Window>

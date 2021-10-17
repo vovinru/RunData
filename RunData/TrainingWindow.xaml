@@ -1,0 +1,76 @@
+﻿<Window x:Class="RunData.TrainingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RunData"
+        mc:Ignorable="d"
+        Title="Тренировка" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Дата"
+                   VerticalAlignment="Center" ></Label>
+        <DatePicker Grid.Row="0" Grid.Column="1"
+                    SelectedDate="{Binding Date}"></DatePicker>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Длина (км.)"
+                   VerticalAlignment="Center" ></Label>
+        <TextBox Grid.Row="1" Grid.Column="1"
+                 Text="{Binding LengthKilometer}"></TextBox>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Общее время"
+                   VerticalAlignment="Center" ></Label>
+        <TextBox Grid.Row="2" Grid.Column="1"
+                 Text="{Binding Time}"></TextBox>
+
+        <Label Grid.Row="3" Grid.Column="0" Content="Места"
+                   VerticalAlignment="Center" ></Label>
+        <Label Grid.Row="3" Grid.Column="1"
+                 Content="{Binding Places}"></Label>
+        <Button Grid.Row="3" Grid.Column="2" Name="buttonPlaces"
+                Content="Выбрать места"
+                Click="buttonPlaces_Click"></Button>
+
+        <Label Grid.Row="4" Grid.Column="0" Content="Город"
+                   VerticalAlignment="Center"></Label>
+        <Label Grid.Row="4" Grid.Column="1"
+                 Content="{Binding City}"></Label>
+        <Button Grid.Row="4" Grid.Column="2" Name="buttonCity"
+                Content="Выбрать город"
+                Click="buttonCity_Click"></Button>
+
+        <CheckBox Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3"
+                  Content="Паркран" VerticalAlignment="Center"></CheckBox>
+        
+        <CheckBox Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3"
+                  Content="Событие" VerticalAlignment="Center"></CheckBox>
+
+        <Label Grid.Row="7" Grid.Column="0" Content="Название события"
+                   VerticalAlignment="Center"></Label>
+        <TextBox Grid.Row="7" Grid.Column="1"></TextBox>
+
+        <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="3"
+                Content="OK"
+                Click="Button_Click"></Button>
+
+
+    </Grid>
+</Window>
