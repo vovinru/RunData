@@ -32,9 +32,9 @@
                 </DataGridTextColumn>
                 <DataGridTextColumn Header="Темп" Binding="{Binding TimeKm}">
                 </DataGridTextColumn>
-                <DataGridCheckBoxColumn Header="Parkrun"></DataGridCheckBoxColumn>
+                <DataGridCheckBoxColumn Header="Parkrun" Binding="{Binding Parkrun}"></DataGridCheckBoxColumn>
                 <DataGridCheckBoxColumn Header="Event"></DataGridCheckBoxColumn>
-                <DataGridCheckBoxColumn Header="EventName"></DataGridCheckBoxColumn>
+                <DataGridTextColumn Header="EventName" Binding="{Binding EventName}"></DataGridTextColumn>
             </DataGrid.Columns>
             
         </DataGrid>

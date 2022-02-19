@@ -52,7 +52,6 @@ namespace RunData
 
         private void buttonChangeTraining_Click(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void buttonDeleteTraining_Click(object sender, RoutedEventArgs e)

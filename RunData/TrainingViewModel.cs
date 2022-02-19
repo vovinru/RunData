@@ -127,6 +127,10 @@ namespace RunData
             {
                 return Training.Parkrun;
             }
+            set
+            {
+                Training.Parkrun = value;
+            }
         }
 
         public bool Event
@@ -135,6 +139,10 @@ namespace RunData
             {
                 return Training.Event;
             }
+            set
+            {
+                Training.Event = value;
+            }
         }
 
         public string EventName
@@ -142,6 +150,10 @@ namespace RunData
             get
             {
                 return Training.EventName;
+            }
+            set
+            {
+                Training.EventName = value;
             }
         }
 
